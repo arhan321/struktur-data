@@ -13,7 +13,7 @@ Tree: Struktur data hierarkis yang terdiri dari node yang saling terhubung.
 Graph: Struktur data yang terdiri dari node (vertices) yang terhubung oleh edge.
 Hash Table: Struktur data yang menggunakan fungsi hash untuk memetakan kunci ke nilai.
 
-Tujuan Belajar Struktur Data
+# Tujuan Belajar Struktur Data :
 
 # Efisiensi Penyimpanan dan Pengambilan Data:
 
