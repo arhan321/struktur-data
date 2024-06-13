@@ -110,7 +110,7 @@ int main() {
         if (choice == 1) {
             string name, email;
             cout << "Enter name: ";
-            cin.ignore(); // To ignore the leftover newline character in the input buffer
+            cin.ignore(); 
             getline(cin, name);
             cout << "Enter email: ";
             getline(cin, email);
@@ -122,7 +122,7 @@ int main() {
             string name, email;
             cout << "Enter user ID to update: ";
             cin >> user_id;
-            cin.ignore(); // To ignore the leftover newline character in the input buffer
+            cin.ignore(); 
             cout << "Enter new name: ";
             getline(cin, name);
             cout << "Enter new email: ";
