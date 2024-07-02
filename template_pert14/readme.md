@@ -24,6 +24,3 @@ docker ps
 ```
 docker compose down
 ```
-
-# kenapa harus pake docker?
-Karena docker bagus untuk production nantinya
