@@ -10,11 +10,11 @@ services:
       - "31235:3306"
     volumes:
       - ./database/data:/var/lib/mysql
-      - ./conf.d:/etc/mysql/conf.d:ro
+      - ./database/conf.d:/etc/mysql/conf.d:ro
     environment:
-      MYSQL_USER: Djony
-      MYSQL_PASSWORD: Djony
-      MYSQL_ROOT_PASSWORD: Djony
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 123
+      MYSQL_ROOT_PASSWORD: 123
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     read_only: false
