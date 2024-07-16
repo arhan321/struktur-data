@@ -95,11 +95,11 @@ create new database
 14. bikin database dengan format seperti ini : 
 ```
 id          tipe datanya : int lengh 12 (auto increment)
-name        tipe datanya : string(VARCHAR) lengh 255 
-nim         tipe datanya : bigint(VARCHAR)lengh 20
-asal_kampus tipe datanya : string(VARCHAR) lengh 255
-jurusan     tipe datanya : string(VARCHAR) lengh 255
-fakultas    tipe datanya : string(VARCHAR) 255
+name        tipe datanya : string (VARCHAR) lengh 255 
+nim         tipe datanya : bigint (bigint)  lengh 20
+asal_kampus tipe datanya : string (VARCHAR) lengh 255
+jurusan     tipe datanya : string (VARCHAR) lengh 255
+fakultas    tipe datanya : string (VARCHAR) 255
 ```
 
 15. setelah itu ctrl + s, lalu save dengan nama (cpp_crud)
