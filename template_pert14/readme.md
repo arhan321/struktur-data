@@ -118,6 +118,16 @@ g++ -o crud_simple crud.cc -lmysqlclient
 ```
 ./crud_simple
 ```
+- struktur folder yang benar : 
+```plaintext
+|-- database
+|   |-- conf.d
+|   |-- data
+|-- crud.cc
+|-- .env
+|-- crud_simple   
+```
+
 
 20. happy coding!!!
 
