@@ -80,7 +80,7 @@ create new connection (pilih mysql)
 12. set : 
 ```
 connection name: mysql_cpp
-host : localhost
+host : 127.0.0.1
 port: 31235
 username: root
 password : 123
