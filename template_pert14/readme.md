@@ -1,7 +1,114 @@
 # c++ conn db
-1. pada terminal silahkan ketikan : apt-get install libmysqlclient-dev
-2. kita harus mengcompile code kita : g++ -o crud_simple crud.cc -lmysqlclient
-3. running hasil compile nya : ./crud_simple
+1. install wsl 2
+
+2. ke windows features, setelah itu nyalakan (hypervisor, virtual machine platform, windows subsystem linux)
+
+3. setelah itu silahkan pada termainal powershell ketikan : 
+```
+wsl --install -d ubuntu
+```
+3. setelah selesai loading jika disuruh isi UNIX :
+```
+unix nya isi (nama anda)
+```
+```
+password nya : 123
+```
+4. setelah berhasil ter install pastikan version yang terinstall version 2 : 
+```
+wsl -l -v 
+```
+5. misalkan setelah terinstall wsl nya belum version 2 
+```
+wsl --set-default-version 2
+```
+6. misalkan sudah berhasil ter install silahkan pada terminal powershell ketikan : 
+```
+ubuntu config --default-user root
+```
+7. setelah itu install docker, dan pada settings di reosource aktifkan wsl integration 
+```
+ubuntu
+```
+8. jika bisa install untuk tools db nya install navicat (gak usah di crack)
+
+9. jika semuanya sudah berhasil, pada ubuntu ketik:
+```
+mkdir strukdat
+```
+10. setelah itu copy kan 
+```
+version: '3'
+
+services:
+  mysql_cpp:
+    image: mariadb:10.2
+    container_name: mysql_cpp
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "31235:3306"
+    volumes:
+      - ./database/data:/var/lib/mysql
+      - ./database/conf.d:/etc/mysql/conf.d:ro
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 123
+      MYSQL_ROOT_PASSWORD: 123
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    read_only: false
+
+  # phpmyadmin:
+  #   image: phpmyadmin:latest
+  #   container_name: phpmyadmin
+  #   restart: always
+  #   ports:
+  #     - 9100:80
+  #   environment:
+  #     - PMA_ARBITRARY=1
+
+```
+10. setelah itu di dalam file strukdat ketikan : 
+```
+docker compose up -d --build
+```
+11. setelah itu silahkan pada navicat 
+```
+create new connection (pilih mysql)
+```
+12. set : 
+```
+connection name: mysql_cpp
+host : localhost
+port: 31235
+username: root
+password : 123
+```
+13. setelah itu klik dibagian connection yang bernama mysql_cpp setelah itu :
+```
+create new database
+```
+
+14. bikin database dengan format seperti ini : 
+```
+id          tipe datanya : int lengh 12 (auto increment)
+name        tipe datanya : string lengh 255 
+nim         tipe datanya : bigint lengh 20
+asal_kampus tipe datanya : string lengh 255
+jurusan     tipe datanya : string lengh 255
+fakultas    tipe datanya : string 255
+```
+
+15. setelah itu ctrl + s
+
+16. setelah itu bikin codingan nya, ambil di github ini
+
+17. sebelum connect to db, pada terminal silahkan ketikan : apt-get install libmysqlclient-dev
+18. kita harus mengcompile code kita : g++ -o crud_simple crud.cc -lmysqlclient
+19. running hasil compile nya : ./crud_simple
+
+20. happy coding!!!
 
 # tools db
 navicat
