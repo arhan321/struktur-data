@@ -85,7 +85,7 @@ port: 31235
 username: root
 password : 123
 
-TOLONG PASTIKAN CONTAINER MYSQL BERJALAN !!!, cek nya ketika : docker ps 
+TOLONG PASTIKAN CONTAINER MYSQL BERJALAN !!!, cek nya ketikan : docker ps 
 ```
 13. setelah itu klik dibagian connection yang bernama mysql_cpp setelah itu :
 ```
