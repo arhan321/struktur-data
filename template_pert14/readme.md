@@ -125,7 +125,7 @@ g++ -o crud_simple crud.cc -lmysqlclient
 |   |-- data
 |-- crud.cc
 |-- .env
-|-- crud_simple   
+|-- crud_simple.exe (hasil compile)
 ```
 
 
