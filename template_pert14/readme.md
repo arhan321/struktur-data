@@ -125,6 +125,7 @@ g++ -o crud_simple crud.cc -lmysqlclient
 |   |-- data
 |-- crud.cc
 |-- .env
+|-- docker-compose.yml
 |-- crud_simple.exe (hasil compile)
 ```
 
