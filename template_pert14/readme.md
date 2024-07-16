@@ -100,7 +100,7 @@ jurusan     tipe datanya : string lengh 255
 fakultas    tipe datanya : string 255
 ```
 
-15. setelah itu ctrl + s
+15. setelah itu ctrl + s, lalu save dengan nama (cpp_crud)
 
 16. setelah itu bikin codingan nya, ambil di github ini
 
