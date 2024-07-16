@@ -104,9 +104,18 @@ fakultas    tipe datanya : string 255
 
 16. setelah itu bikin codingan nya, ambil di github ini
 
-17. sebelum connect to db, pada terminal silahkan ketikan : apt-get install libmysqlclient-dev
-18. kita harus mengcompile code kita : g++ -o crud_simple crud.cc -lmysqlclient
-19. running hasil compile nya : ./crud_simple
+17. sebelum connect to db, pada terminal silahkan ketikan : 
+```
+apt-get install libmysqlclient-dev
+```
+18. kita harus mengcompile code kita : 
+```
+g++ -o crud_simple crud.cc -lmysqlclient
+```
+19. running hasil compile nya : 
+```
+./crud_simple
+```
 
 20. happy coding!!!
 
