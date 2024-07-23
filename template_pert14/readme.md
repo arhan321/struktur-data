@@ -171,3 +171,5 @@ karena docker bagus buat production nantinya
 6. Isolasi: Kontainer berjalan secara terpisah dari sistem utama dan kontainer lainnya. Ini membantu memastikan bahwa aplikasi di dalam kontainer tidak saling mengganggu.
 
 7. Efisiensi: Kontainer lebih efisien dibandingkan mesin virtual (VM) karena mereka berbagi kernel sistem operasi yang sama dan hanya mengemas aplikasi dan dependensinya, bukan seluruh sistem operasi.
+
+============ TERIMAKASIHHHH =============
